@@ -122,11 +122,11 @@ public class Story {
         System.out.println("");
     }
 
-    public void theFirstFight() throws NotANumberException {
+    public void theFirstFight() throws NotANumberException, InterruptedException {
         Adventure.p1.meleeOnlyFight(new Goblin(), true);
     }
 
-    public void tripToVanatiaCity() throws NotANumberException {
+    public void tripToVanatiaCity() throws NotANumberException, InterruptedException {
         System.out.println("Mysterious Voice: Phew... that wasn't quite easy. You should level up some more so you don't die.");
         System.out.println("Mysterious Voice: Anyway, let's go to Vanatia City. On your way there it's quite possible that you meet some more goblins.");
         System.out.println("You can either try to avoid them or try to kill them to level up some more.");
@@ -270,7 +270,7 @@ public class Story {
         System.out.println("");
     }
 
-    public void theFirstBossfight() throws NotANumberException {
+    public void theFirstBossfight() throws NotANumberException, InterruptedException {
         System.out.println("You arrive at the old ruins. There is an ill feeling in the air. ");
         System.out.println("You enter the ruins, searching the source of the ill feeling.");
         System.out.println("Arriving at the center square you see a strange being lying on the ground.");

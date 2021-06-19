@@ -305,7 +305,7 @@ public class Player {
         System.out.println("You healed yourself by " + healNameToHeal.get(chosenHeal).getHealthRestored() + " HP");
     }
 
-    public void fightPattern(Enemy enemy, int thisEnemyLevel, boolean attacks, boolean magic) throws NotANumberException {
+    public void fightPattern(Enemy enemy, int thisEnemyLevel, boolean attacks, boolean magic) throws NotANumberException, InterruptedException {
         String action;
         if (magic) {
             System.out.println("Do you want to attack (ATK), use magic (MAGIC) or heal (HEAL) ?");
@@ -407,7 +407,7 @@ public class Player {
         }
     }
 
-    public void meleeOnlyFight(Enemy enemy, boolean attacks) throws NotANumberException {
+    public void meleeOnlyFight(Enemy enemy, boolean attacks) throws NotANumberException, InterruptedException {
         boolean enemyAlive = true;
         int thisEnemyLevel;
         thisEnemyLevel = enemy.levelCalculation(getPlayerLevel());
@@ -423,7 +423,7 @@ public class Player {
         }
     }
 
-    public void firstBossFight(Enemy enemy) throws NotANumberException {
+    public void firstBossFight(Enemy enemy) throws NotANumberException, InterruptedException {
         boolean bossAlive = true;
         int bossStage = 1;
         System.out.println("You woke the old evil laying here from its slumber.");
